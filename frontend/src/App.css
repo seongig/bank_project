@@ -1,98 +1,98 @@
 /* 전체 페이지 레이아웃 */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  height: 100vh; /* 화면 전체 높이 채우기 */
-  background-color: #f9f9f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh; /* 화면 전체 높이 채우기 */
+    background-color: #f9f9f9;
 }
 
 /* 사이드바 */
 .sidebar {
-  width: 200px; /* 데스크톱에 맞는 너비 */
-  background-color: #f5f5f5;
-  height: 100%; /* 화면 전체 높이 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 0;
-  position: fixed; /* 화면 왼쪽 고정 */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 200px; /* 데스크톱에 맞는 너비 */
+    background-color: #f5f5f5;
+    height: 100%; /* 화면 전체 높이 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    position: fixed; /* 화면 왼쪽 고정 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* 사이드바 메뉴 */
 .sidebar div {
-  width: 100%;
-  padding: 1rem;
-  cursor: pointer;
-  text-align: center;
-  font-size: 16px;
-  color: #333;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
 }
 
 .sidebar div:hover {
-  background-color: #ddd;
-  border-radius: 8px;
+    background-color: #ddd;
+    border-radius: 8px;
 }
 
 .sidebar div p {
-  margin: 5px 0 0;
-  font-size: 14px;
+    margin: 5px 0 0;
+    font-size: 14px;
 }
 
 /* 메인 컨텐츠 */
 .content {
-  margin-left: 200px; /* 사이드바 너비만큼 여백 추가 */
-  padding: 2rem;
-  width: calc(100% - 200px); /* 사이드바 제외한 나머지 공간 */
-  height: 100%; /* 화면 전체 높이 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  overflow-y: auto; /* 스크롤 가능 */
+    margin-left: 200px; /* 사이드바 너비만큼 여백 추가 */
+    padding: 2rem;
+    width: calc(100% - 200px); /* 사이드바 제외한 나머지 공간 */
+    height: 100%; /* 화면 전체 높이 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    overflow-y: auto; /* 스크롤 가능 */
 }
 
 /* 카드 컨테이너 */
 .card-container {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
-  flex-wrap: wrap; /* 화면 크기에 따라 카드가 줄 바꿈됨 */
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* 화면 크기에 따라 카드가 줄 바꿈됨 */
 }
 
 /* 카드 */
 .card {
-  width: 300px; /* 데스크톱에 적합한 너비 */
-  height: 200px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 1rem;
-  background-color: #fff;
+    width: 300px; /* 데스크톱에 적합한 너비 */
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
 }
 
 .card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .card p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .card button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
 }
 
 .card button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
